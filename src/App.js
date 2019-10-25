@@ -12,27 +12,34 @@ function App() {
             
             <h1>Welcome to High-Lo Dice</h1>
             
-            <p class="App">
+            <div class="betQuickButtons">
+                <ButtonGroup aria-label="betQuickButtons">
+                    <Button variant="secondary">min</Button>
+                    <Button variant="secondary">.001</Button>
+                    <Button variant="secondary">/2</Button>
+                    <Button variant="secondary">x2</Button>
+                    <Button variant="secondary">max</Button>
+                </ButtonGroup>            
+            </div>
+
+            <div class="betAmt">
                 <Form>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                         <Form.Control as="input" rows="1" res/>
                     </Form.Group>
                 </Form>
-            </p>
+                <p class="currentBetAmountText">
+                    Current Bet Amount
+                </p>
 
-            <p class="App">
-                Current Bet Amount
-            </p>
-<ButtonGroup aria-label="Basic example">
-  <Button variant="secondary">Left</Button>
-  <Button variant="secondary">Middle</Button>
-  <Button variant="secondary">Right</Button>
-</ButtonGroup>
-            <p class="App">
-                <Button variant="betHigh" size="lg" block>
+            </div>
+
+
+            <p class="loHighButtons">
+                <Button variant="primary" size="lg" block>
                     Bet Lo
                 </Button>
-                <Button variant="primary" size="lg" block>
+                <Button variant="danger" size="lg" block>
                     Bet High
                 </Button>
 

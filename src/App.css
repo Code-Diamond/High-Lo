@@ -1,11 +1,14 @@
 .App {
   text-align: center;
+  justify-content: center;
 }
 
 .App-logo {
   height: 40vmin;
 }
-
+.App-link {
+  color: #09d3ac;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -17,10 +20,31 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
-}
+.betAmt{
+  margin-left:33%;
+  margin-right:33%;
+  margin-top:3px;
+  margin-bottom:0px;
+  width: 33%;
 
+  text-align: center;
+  justify-content: center;
+}
+.betQuickButtons{
+  text-align: center;
+  justify-content: center;
+}
+.currentBetAmountText{
+  margin-top:-20px;
+}
+.loHighButtons{
+  width:33%;
+  margin-left:33%;
+  margin-right:33%;
+  margin-top:3px;  
+  text-align: center;
+  justify-content: center;
+}
 h1{
  text-align: center; 
 }
