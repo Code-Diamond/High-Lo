@@ -20,7 +20,7 @@
   color: white;
 }
 
-.betAmt{
+.betAmount{
   margin-left:33%;
   margin-right:33%;
   margin-top:3px;
@@ -34,7 +34,7 @@
   text-align: center;
   justify-content: center;
 }
-.currentBetAmountText{
+.currentBetAmountLabel{
   margin-top:-20px;
 }
 .loHighButtons{
@@ -44,6 +44,57 @@
   margin-top:3px;  
   text-align: center;
   justify-content: center;
+}
+.userAmount{
+  width:33%;
+  margin-left:33%;
+  margin-right:33%;
+  margin-top:3px;  
+  text-align: center;
+  justify-content: center;
+}
+.freeCoins{
+  width:33%;
+  margin-left:33%;
+  margin-right:33%;
+  margin-top:0px;  
+  text-align: center;
+  justify-content: center;
+}
+.multiplier{
+  width:33%;
+  margin-left:33%;
+  margin-right:33%;
+  margin-top:30px;  
+  text-align: center;
+  justify-content: center;
+}
+.multiplierLabel{
+  width:33%;
+  margin-left:33%;
+  margin-right:33%;
+  margin-top:-20px;  
+  text-align: center;
+  justify-content: center;
+}
+.betChance{
+  width:33%;
+  margin-left:33%;
+  margin-right:33%;
+  margin-top:3px;  
+  text-align: center;
+  justify-content: center;
+}
+.chanceLabel{
+  width:33%;
+  margin-left:33%;
+  margin-right:33%;
+  margin-top:-20px;  
+  text-align: center;
+  justify-content: center;
+}
+.form{
+ display:block; margin:auto;text-align: center;
 }
 h1{
  text-align: center; 
