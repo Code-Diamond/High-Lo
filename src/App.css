@@ -96,6 +96,15 @@
 .form{
  display:block; margin:auto;text-align: center;
 }
+#multiplierForm{
+  text-align:center;
+}
+#chanceForm{
+  text-align:center;
+}
+#betAmtForm{
+  text-align:center;
+}
 h1{
  text-align: center; 
 }

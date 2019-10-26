@@ -7,53 +7,62 @@ import './App.css';
 
 
 function App() {
-
+    var balance = 0.000001;
 
     function getFreeCoins (){
-        alert('obtain free coins');
+        balance += 0.000001;
+        document.getElementById("balanceId").textContent = Number((balance).toFixed(6));
     }
 
     function multiplyTimesOnePointFive(){
-        alert('multiplier times 1.5');
+        document.getElementById("multiplierForm").value = 1.5;
     }
     function multiplyTimesTwo(){
-        alert('multiplier times two');
+        document.getElementById("multiplierForm").value = 2;
     }
     function multiplyTimesFour(){
-        alert('multiplier times 4');
+        document.getElementById("multiplierForm").value = 4;
     }
     function multiplyTimesEight(){
-        alert('multiplier times 8');
+        document.getElementById("multiplierForm").value = 8;
     }
 
 
     function chanceUpFivePercent(){
-        alert('+5%');
+        // alert('+5%');
+        var result = +document.getElementById("chanceForm").value;
+        result +=5;
+        document.getElementById("chanceForm").value = result;
     }
     function chanceDownFivePercent(){
-        alert('-5%');
+        // alert('-5%');
+        document.getElementById("chanceForm").value -= 5;
     }
     function chanceUpTenPercent(){
-        alert('raise chance up 10%');
+        // alert('raise chance up 10%');
+        var result = +document.getElementById("chanceForm").value;
+        result +=10;
+        document.getElementById("chanceForm").value = result;
     }
     function chanceDownTenPercent(){
-        alert('change chance down 10%');
+        // alert('change chance down 10%');
+        document.getElementById("chanceForm").value -= 10;
     }    
 
     function currentBetMin (){
-        alert('change bet to min');
+        document.getElementById("betAmtForm").value= 0.000001;
     }
     function currentBetOneHundredth (){
-        alert('change bet to .001');
+        document.getElementById("betAmtForm").value= 0.001;
     }
     function currentBetDivideTwo (){
-        alert('change bet divide two');
+        document.getElementById("betAmtForm").value /= 2;
     }
     function currentBetMultiplyTwo (){
-        alert('change bet times two');
+        document.getElementById("betAmtForm").value *= 2;
     }
     function currentBetMax (){
-        alert('change bet to max');
+        document.getElementById("betAmtForm").value = 1000;
     }
     function betLo () {
         alert('Bet Lo');
@@ -69,7 +78,7 @@ function App() {
             <h1>Welcome to High-Lo Dice</h1>
             
             <div class="userAmount">
-                You have: 0.00000001 coins.
+                You have: <span id="balanceId" >{balance}</span> coins.
             </div>
 
             <div class="freeCoins">
@@ -85,7 +94,7 @@ function App() {
                 </ButtonGroup> 
                 <Form>
                     <Form.Group controlId="multiplierForm">
-                        <Form.Control as="input" rows="1" res/>
+                        <Form.Control as="input" value="2" rows="1" res/>
                     </Form.Group>
                 </Form>
                 <p class="multiplierLabel">
@@ -102,7 +111,7 @@ function App() {
                 </ButtonGroup> 
                 <Form>
                     <Form.Group controlId="chanceForm">
-                        <Form.Control as="input" rows="1" res/>
+                        <Form.Control as="input" value="49.5" rows="1" res/>
                     </Form.Group>
                 </Form>
                 <p class="chanceLabel">
@@ -122,8 +131,8 @@ function App() {
 
             <div class="betAmount">
                 <Form>
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Control as="input" rows="1" res/>
+                    <Form.Group controlId="betAmtForm">
+                        <Form.Control as="input" value="0.0" rows="1" res/>
                     </Form.Group>
                 </Form>
                 <p class="currentBetAmountLabel">
